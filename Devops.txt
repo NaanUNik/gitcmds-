@@ -1,0 +1,104 @@
+GIT IMPT COMMANDS:-
+create a repo in github
+
+git clone <URL> { copy of remote}
+git add .
+git commit -m "msg" {commit}
+git branch -a {list out local + remote}
+git branch <branch name> {local}
+git checkout <branch name> { swtich branch}
+git status { sync/commit status}
+git push{local --> remote}
+git pull {latest from remote}
+git log {check logs}
+git checkout -b <branchname> {to cretae and get into the branch}
+git push -u origin <branchname> {to push the newly created branch to remote}
+git branch -d <branchname> {to delete a branch created. However, if u are in the same branch and u can't delete the branch}
+git merge <branchname whr the chages are made>. {To merge the changes made in the branch to the pervios branch after add and commit}
+git stash {to push ur  changes aside without commiting}
+git stash list {listing out the stash area}
+git stash pop {to bring back the stashed changes}
+
+
+JENKINS:
+
+CI- c0ntinueos integration  
+
+
+Maven:   POM --- Project Object Model
+
+Clean ---- target<Sub Dirs>
+Validate --- project
+Compile -- Source code
+Test --- Junits
+Package--- jar,war
+Verify -- package verify
+Install -- local
+Deploy --- locoal or remote
+
+
+
+SonarQube ---- 
+-Dmaven.skip.test=true {will compile the test case but skip}
+
+token for sonarqube	238b1a18b50054e3525092cf5fcb3f48ac8ceca7 
+
+
+
+
+AWS:
+pillars:-
+1. Security --- IAM, traceability,l4,l7,risk assesment and mitigation strategy
+2. reliablity -- on demand usage, auto scaling, fail over, no SQl, read replicas, cache mechnaism 
+3. Cost optimization -- eliminate unwanted usgae, deploy in same region 
+4. performance efficiency --- use right recources , high CPU and RAm
+5. operational excellence ---- cloud watch(monitoring)
+Data center: 1000's of servers can be stored online. 
+1 availabity zone can have mulitple data cernter.
+1 AWS region can have multiple availabity zones. there are 18 regions . there are 77 edge locations.
+AMI (amazon machine image)
+market place
+create your own
+pre build
+ec2- elastic comute cloud
+EBS(elastic blockstorage) can be linked to 1 instance at a time. SSD, HDD
+EFS (elastic file storge) can be linked to multiple instance for the same storage. defalut 8gb of storage. 
+S3- simple storage service 
+elastic address
+vpc- virtual private cloud 
+auto scaling -- min 2 max 12 add early delete late
+dc -direct connect (private connectivity btw on premise to cloud)	
+load balancer 
+route 53
+IAM- cognito 
+elastic beanstalk
+blue green deploy
+sticky sessions 
+decoupled architecture - loosely coupled 
+Simple queue service
+simple notification service 
+disaster recovery
+amazon athena
+aws sts
+amazon kinesis (video streaming)
+
+
+Ansible: () agentless
+controlling machine --> playbooks and inventory files(list of servers to which u have to perform an action)
+control machine will be connected to the servers through SSH.
+Ansible tower
+Yml files start with --- and ends with ... 
+-u -- user
+-a --
+-m -- 
+
+
+
+
+AnT migration:
+package.xml
+build.xml
+data records migration (export )
+
+
+Docker (docker tutorials)
